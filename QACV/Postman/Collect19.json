@@ -1,0 +1,420 @@
+{
+	"info": {
+		"_postman_id": "82443777-a7ee-4b23-ad7e-2d8f019ecaf7",
+		"name": "Group 19. TestKN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://116.203.27.46:5002/first",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"first"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Name=?Age=",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://116.203.27.46:5002/get_method?name=TestKN&age=28",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "TestKN"
+						},
+						{
+							"key": "age",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "First",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://116.203.27.46:5002/first",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"first"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_method",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://116.203.27.46:5002/get_method",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"get_method"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User info 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"age\": 28,\r\n    \"salary\": 1000,\r\n    \"name\": \"kn\", \r\n    \"auth_token\": \"{{token: /s34lfgbj/None/jjd909/26691kjkWpqc2777None199605evny}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://116.203.27.46:5002/user_info",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"user_info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://116.203.27.46:5002/login?login=TestKN&password=1111",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "TestKN"
+						},
+						{
+							"key": "password",
+							"value": "1111"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3-d Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "TestKN",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "\"token\": \"/s34lfgbj/None/jjd909/26691kjkWpqc2777None199605evny\"",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://116.203.27.46:5002/new_data",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"new_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4-th Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "60",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "TestKN",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "\"token\": \"/s34lfgbj/None/jjd909/26691kjkWpqc2777None199605evny\"",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://116.203.27.46:5002/test_pet_info",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"test_pet_info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5-th Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "TestKN",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "\"token\": \"/s34lfgbj/None/jjd909/26691kjkWpqc2777None199605evny\"",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://116.203.27.46:5002/get_test_user",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"get_test_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6 Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "auth_token",
+							"value": "\"token\": \"/s34lfgbj/None/jjd909/26691kjkWpqc2777None199605evny\"",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://116.203.27.46:5002/currency",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "auth_token",
+							"value": "\"token\": \"/s34lfgbj/None/jjd909/26691kjkWpqc2777None199605evny\"",
+							"type": "text"
+						},
+						{
+							"key": "curr_code",
+							"value": "23",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "curr_code",
+							"value": "355",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "curr_code",
+							"value": "74",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://116.203.27.46:5002/curr_byn",
+					"protocol": "http",
+					"host": [
+						"116",
+						"203",
+						"27",
+						"46"
+					],
+					"port": "5002",
+					"path": [
+						"curr_byn"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
